@@ -1,6 +1,35 @@
 <!doctype html>
 <html lang="es-CR">
 <head>
+  
+
+<!-- Google Ads: etiqueta base -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18560557004"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'AW-18560557004');
+</script>
+
+
+<!-- Conversion de Google Ads: clic en WhatsApp -->
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const boton = document.querySelector('.cta');
+
+    if (!boton) return;
+
+    boton.addEventListener('click', function () {
+      if (typeof gtag === 'function') {
+        gtag('event', 'conversion', {
+          'send_to': 'AW-18560557004/ikNaCM7137MdEMy_rpJF'
+        });
+      }
+    });
+  });
+</script>
+
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#092c5a">
 <meta name="description" content="Tutorías presenciales de Matemática, Física y Química para primaria y secundaria en Sabanilla de Montes de Oca. ₡9.000 por hora. Consultá disponibilidad con Ana Faeth.">
